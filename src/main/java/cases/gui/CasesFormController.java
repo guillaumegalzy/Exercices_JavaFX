@@ -10,7 +10,7 @@ public class CasesFormController {
     public RadioButton Casse_Min,Casse_Maj;
     public TextField textResult;
     public TitledPane Choice_Panel,Fond_Panel,Texte_Panel,Casse_Panel;
-    public ToggleGroup Fond,Texte;
+    public ToggleGroup Fond,Texte,Casse;
     public String Fond_value = "white";
     public String Texte_value = "black";
 

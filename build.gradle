@@ -26,4 +26,4 @@ javafx {
 }
 
 // Renommer la main class selon l'application désirée et lancer avec Gradle
-mainClassName = 'cases.Cases'
+mainClassName = 'main.App'

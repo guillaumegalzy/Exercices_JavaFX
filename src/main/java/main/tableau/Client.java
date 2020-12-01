@@ -1,4 +1,4 @@
-package tableau;
+package main.tableau;
 
 public class Client {
     private String nom;

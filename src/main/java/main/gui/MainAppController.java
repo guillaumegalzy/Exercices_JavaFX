@@ -5,7 +5,7 @@ import javafx.collections.ObservableList;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
-import tableau.Client;
+import main.tableau.Client;
 
 public class MainAppController {
     // Gestionnaire d'écoute pour les sliders
@@ -25,16 +25,16 @@ public class MainAppController {
                     Change_Slider();
                 });
 
-            // Initialisation des données pour le tableau
+            // Initialisation des données pour le main.tableau
                 model.add(new Client("Josh", "Homme", "Joshua Tree"));
                 model.add(new Client("Dave", "Grohl", "Warren"));
                 model.add(new Client("Krist", "Novoselic", "Compton"));
                 model.add(new Client("Robert", "Trujillo", "Santa Monica"));
 
-                //On rend le tableau non-éditable
+                //On rend le main.tableau non-éditable
                 lst_clients.setEditable(false);
 
-                // Jonction du tableau avec les données
+                // Jonction du main.tableau avec les données
                 col_prenom.setCellValueFactory(new PropertyValueFactory<>("prenom"));
                 col_nom.setCellValueFactory(new PropertyValueFactory<>("nom"));
                 col_ville.setCellValueFactory(new PropertyValueFactory<>("ville"));

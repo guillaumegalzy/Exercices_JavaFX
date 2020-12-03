@@ -89,6 +89,7 @@ public class MainAppController {
         public void buttonVider_Click() {this.result.clear();}
 
         public void buttonCalculer_Click() {
+            buttonVider_Click();
             int calc = 0;
             String[] chiffre = this.result.getText().split("[+]");
             for (String element: chiffre) {
@@ -242,7 +243,7 @@ public class MainAppController {
     // TABLEAU
         // Membres
             public TableView<Client> lst_clients;
-            public TableColumn<Client,String>  col_prenom;
+            public TableColumn<Client,String> col_prenom;
             public TableColumn<Client,String> col_nom;
             public TableColumn<Client,String> col_ville;
             public TextField txt_prenom;
